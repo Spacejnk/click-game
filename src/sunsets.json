@@ -1,0 +1,15 @@
+  
+[
+    {
+        "id": 1,
+        "name": "Sun One",
+        "image": "sunset1.png",
+        "count": 0
+    },
+    {
+        "id": 2,
+        "name": "Sun Two",
+        "image": "sunset2.png",
+        "count": 0
+    }
+]
