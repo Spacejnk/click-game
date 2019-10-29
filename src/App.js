@@ -24,7 +24,7 @@ class App extends Component {
     this.state.sunsets.forEach(sunset => {
       sunset.count = 0;
     });
-    alert(`Game Over :( \nscore: ${this.state.score}`);
+    alert(`You lose, try again \nscore: ${this.state.score}`);
     this.setState({score: 0});
     return true;
   }
