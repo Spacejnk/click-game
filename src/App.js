@@ -57,8 +57,10 @@ class App extends Component {
             key={sunset.id}
             image={sunset.image}
           />
+         
         ))}
       </Wrapper>
+      
     );
   }
 }
