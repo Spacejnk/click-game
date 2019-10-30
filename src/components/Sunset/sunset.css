@@ -2,10 +2,10 @@
 img {
     float: left;
     padding: 10px;
-    height: 200px;
-    width: 200px;
+    height: 210px;
+    width: 210px;
     margin: 30px;
-    margin-left: 30px;
+    margin-left: 10%;
     border-radius: 50%;
 
 }

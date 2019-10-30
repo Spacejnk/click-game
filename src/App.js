@@ -3,6 +3,8 @@ import Sunset from "./components/Sunset/Sunset";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Header from "./components/Header/Header";
 import sunsets from "./sunsets.json";
+import         "./components/Header/Header.css";
+import         "./components/Wrapper/Wrapper.css";
 
 
 
@@ -49,6 +51,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <div>
+          <h1 className="header-click" id="head">Click an image to start and do not click more than once.</h1>
+        </div>
         <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
         {this.state.sunsets.map(sunset => (
           <Sunset
