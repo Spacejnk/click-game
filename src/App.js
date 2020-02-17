@@ -12,6 +12,7 @@ import         "./components/Wrapper/Wrapper.css";
 class App extends Component {
   // Setting this.state.sunsets to the sunsets json array
   state = {
+   
     sunsets,
     score: 0,
     highscore: 0
@@ -21,14 +22,22 @@ class App extends Component {
     if (this.state.score > this.state.highscore) {
       this.setState({highscore: this.state.score}, function() {
         console.log(this.state.highscore);
+        this.setState(<div>"Test"</div>);
       });
     }
     this.state.sunsets.forEach(sunset => {
       sunset.count = 0;
-    });
+
+    })
+   //--
+  //  this.setState(<div>"Test"${this.state.test}</div>);
+  //  this.setState({score: 0});
+   //--
     alert(`You lose, try again \nscore: ${this.state.score}`);
     this.setState({score: 0});
+
     return true;
+    
   }
 
   clickCount = id => {
@@ -54,13 +63,14 @@ class App extends Component {
         <div>
           <h1 className="header-click" id="head">Click an image to start and do not click more than once.</h1>
         </div>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header test={this.state.test} score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
         {this.state.sunsets.map(sunset => (
           <Sunset
             clickCount={this.clickCount}
             id={sunset.id}
             key={sunset.id}
             image={sunset.image}
+            test={sunset.test}
           />
          
         ))}
