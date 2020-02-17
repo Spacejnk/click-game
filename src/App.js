@@ -63,7 +63,7 @@ class App extends Component {
         <div>
           <h1 className="header-click" id="head">Click an image to start and do not click more than once.</h1>
         </div>
-        <Header test={this.state.test} score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header test={this.state.test} score={this.state.score} highscore={this.state.highscore}>Memory Game</Header>
         {this.state.sunsets.map(sunset => (
           <Sunset
             clickCount={this.clickCount}
