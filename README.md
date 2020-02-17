@@ -1,7 +1,7 @@
-# Click Game
+# Memory Game App
 
 <dl>
-  <dt>Clicky Game!</dt>
+  <dt>Memory Game!</dt>
   <dd>Click on an image to earn points, but don't click on any more than once!</dd>
 </dl>
 
